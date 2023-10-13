@@ -235,6 +235,38 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 
 ---
 </details><details>
+	<summary> <strong> deque </strong> </summary>	
+
+---
+
+#####  Package deque implements a Double Ended Queue data structure.
+
+---
+##### Functions:
+
+1. [`New`](./structure/deque/deque.go#L22):  New returns a new DoublyEndedQueue.
+
+---
+##### Types
+
+1. [`DoublyEndedQueue`](./structure/deque/deque.go#L17): No description provided.
+
+
+---
+</details><details>
+	<summary> <strong> deque_test </strong> </summary>	
+
+---
+
+##### Types
+
+1. [`QueryStructure`](./structure/deque/deque_test.go#L20): No description provided.
+
+2. [`TestCaseData`](./structure/deque/deque_test.go#L27): No description provided.
+
+
+---
+</details><details>
 	<summary> <strong> diffiehellman </strong> </summary>	
 
 ---
@@ -422,7 +454,7 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 10. [`NewDSU`](./graph/kruskal.go#L34):  NewDSU will return an initialised DSU using the value of n which will be treated as the number of elements out of which the DSU is being made
 11. [`NewTree`](./graph/lowestcommonancestor.go#L84): No description provided.
 12. [`NotExist`](./graph/depthfirstsearch.go#L12): No description provided.
-13. [`Topological`](./graph/topological.go#L7):  Assumes that graph given is valid and possible to get a topo ordering. constraints are array of []int{a, b}, representing an edge going from a to b
+13. [`Topological`](./graph/topological.go#L7):  Topological assumes that graph given is valid and that its possible to get a topological ordering. constraints are array of []int{a, b}, representing an edge going from a to b
 
 ---
 ##### Types
@@ -729,7 +761,7 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 
 ##### Functions:
 
-1. [`Parenthesis`](./strings/parenthesis/parenthesis.go#L12):  parcounter will be 0 if all open parenthesis are closed correctly
+1. [`Parenthesis`](./strings/parenthesis/parenthesis.go#L8):  Parenthesis algorithm checks if every opened parenthesis is closed correctly. When parcounter is less than 0 when a closing parenthesis is detected without an opening parenthesis that surrounds it and parcounter will be 0 if all open parenthesis are closed correctly.
 
 ---
 </details><details>
@@ -964,29 +996,31 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 ---
 ##### Functions:
 
-1. [`Bubble`](./sort/bubblesort.go#L9):  Bubble is a simple generic definition of Bubble sort algorithm.
-1. [`Bogo`](./sort/bogosort.go#L32):  Bogo generates random permutations until it guesses the correct one.
-2. [`Bucket`](./sort/bucketsort.go#L7):  Bucket sorts a slice. It is mainly useful when input is uniformly distributed over a range.
-3. [`Comb`](./sort/combSort.go#L17):  Comb is a simple sorting algorithm which is an improvement of the bubble sorting algorithm.
-4. [`Count`](./sort/countingsort.go#L11): No description provided.
-5. [`Cycle`](./sort/cyclesort.go#L10):  Cycle sort is an in-place, unstable sorting algorithm that is particularly useful when sorting arrays containing elements with a small range of values. It is theoretically optimal in terms of the total number of writes to the original array.
-6. [`Exchange`](./sort/exchangesort.go#L8): No description provided.
-7. [`HeapSort`](./sort/heapsort.go#L116): No description provided.
-8. [`ImprovedSimple`](./sort/simplesort.go#L27):  ImprovedSimple is a improve SimpleSort by skipping an unnecessary comparison of the first and last. This improved version is more similar to implementation of insertion sort
-9. [`Insertion`](./sort/insertionsort.go#L5): No description provided.
-10. [`Merge`](./sort/mergesort.go#L41):  Merge Perform merge sort on a slice
-11. [`MergeIter`](./sort/mergesort.go#L55): No description provided.
-12. [`Pancake`](./sort/pancakesort.go#L8):  Pancake sorts a slice using flip operations, where flip refers to the idea of reversing the slice from index `0` to `i`.
-13. [`ParallelMerge`](./sort/mergesort.go#L66):  ParallelMerge Perform merge sort on a slice using goroutines
-14. [`Partition`](./sort/quicksort.go#L12): No description provided.
-15. [`Patience`](./sort/patiencesort.go#L13): No description provided.
-16. [`Pigeonhole`](./sort/pigeonholesort.go#L15):  Pigeonhole sorts a slice using pigeonhole sorting algorithm. NOTE: To maintain time complexity O(n + N), this is the reason for having only Integer constraint instead of Ordered.
-17. [`Quicksort`](./sort/quicksort.go#L39):  Quicksort Sorts the entire array
-18. [`QuicksortRange`](./sort/quicksort.go#L26):  QuicksortRange Sorts the specified range within the array
-19. [`RadixSort`](./sort/radixsort.go#L43): No description provided.
-20. [`Selection`](./sort/selectionsort.go#L5): No description provided.
-21. [`Shell`](./sort/shellsort.go#L5): No description provided.
-22. [`Simple`](./sort/simplesort.go#L13): No description provided.
+1. [`BinaryInsertion`](./sort/binaryinsertionsort.go#L13): No description provided.
+2. [`Bogo`](./sort/bogosort.go#L32): No description provided.
+3. [`Bubble`](./sort/bubblesort.go#L9):  Bubble is a simple generic definition of Bubble sort algorithm.
+4. [`Bucket`](./sort/bucketsort.go#L7):  Bucket sorts a slice. It is mainly useful when input is uniformly distributed over a range.
+5. [`Cocktail`](./sort/cocktailsort.go#L9):  Cocktail sort is a variation of bubble sort, operating in two directions (beginning to end, end to beginning)
+6. [`Comb`](./sort/combSort.go#L17):  Comb is a simple sorting algorithm which is an improvement of the bubble sorting algorithm.
+7. [`Count`](./sort/countingsort.go#L11): No description provided.
+8. [`Cycle`](./sort/cyclesort.go#L10):  Cycle sort is an in-place, unstable sorting algorithm that is particularly useful when sorting arrays containing elements with a small range of values. It is theoretically optimal in terms of the total number of writes to the original array.
+9. [`Exchange`](./sort/exchangesort.go#L8): No description provided.
+10. [`HeapSort`](./sort/heapsort.go#L116): No description provided.
+11. [`ImprovedSimple`](./sort/simplesort.go#L27):  ImprovedSimple is a improve SimpleSort by skipping an unnecessary comparison of the first and last. This improved version is more similar to implementation of insertion sort
+12. [`Insertion`](./sort/insertionsort.go#L5): No description provided.
+13. [`Merge`](./sort/mergesort.go#L41):  Merge Perform merge sort on a slice
+14. [`MergeIter`](./sort/mergesort.go#L55): No description provided.
+15. [`Pancake`](./sort/pancakesort.go#L8):  Pancake sorts a slice using flip operations, where flip refers to the idea of reversing the slice from index `0` to `i`.
+16. [`ParallelMerge`](./sort/mergesort.go#L66):  ParallelMerge Perform merge sort on a slice using goroutines
+17. [`Partition`](./sort/quicksort.go#L12): No description provided.
+18. [`Patience`](./sort/patiencesort.go#L13): No description provided.
+19. [`Pigeonhole`](./sort/pigeonholesort.go#L15):  Pigeonhole sorts a slice using pigeonhole sorting algorithm. NOTE: To maintain time complexity O(n + N), this is the reason for having only Integer constraint instead of Ordered.
+20. [`Quicksort`](./sort/quicksort.go#L39):  Quicksort Sorts the entire array
+21. [`QuicksortRange`](./sort/quicksort.go#L26):  QuicksortRange Sorts the specified range within the array
+22. [`RadixSort`](./sort/radixsort.go#L43): No description provided.
+23. [`Selection`](./sort/selectionsort.go#L5): No description provided.
+24. [`Shell`](./sort/shellsort.go#L5): No description provided.
+25. [`Simple`](./sort/simplesort.go#L13): No description provided.
 
 ---
 ##### Types
@@ -1019,13 +1053,20 @@ Read our [Contribution Guidelines](CONTRIBUTING.md) before you contribute.
 
 ---
 
+##### Functions:
+
+1. [`NewStack`](./structure/stack/stackarray.go#L17):  NewStack creates and returns a new stack.
+
+---
 ##### Types
 
-1. [`Node`](./structure/stack/stacklinkedlist.go#L13): No description provided.
+1. [`Array`](./structure/stack/stackarray.go#L12): No description provided.
 
-2. [`SList`](./structure/stack/stacklinkedlistwithlist.go#L18): No description provided.
+2. [`Node`](./structure/stack/stacklinkedlist.go#L13): No description provided.
 
-3. [`Stack`](./structure/stack/stacklinkedlist.go#L19): No description provided.
+3. [`SList`](./structure/stack/stacklinkedlistwithlist.go#L18): No description provided.
+
+4. [`Stack`](./structure/stack/stacklinkedlist.go#L19): No description provided.
 
 
 ---
